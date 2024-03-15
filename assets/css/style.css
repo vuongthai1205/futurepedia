@@ -197,8 +197,16 @@ a:hover {
 }
 
 .header-bg {
-    /* background-color: var(--color-blue); */
     padding: 8px 0;
+}
+
+.header-bg.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-blue);
+    z-index: 9999;
 }
 .link-menu:hover {
     color: var(--bluish-gray);
@@ -525,16 +533,20 @@ span.info-count {
     border: none;
     outline: none;
     background: transparent;
+    display: flex;
 }
 
 .card-item__info-count {
     display: flex;
     align-items: center;
 }
-
-.card-item__info-count button img {
-    width: 20px;
-    height: 20px;
+div.card-item__info-count:hover .info-count {
+    text-decoration: underline;
+}
+div.card-item__info-count:hover button > svg.card-item__info-count-svg > path {
+    fill: #49adff;
+    stroke: #49adff;
+    cursor: pointer;
 }
 
 p.card-item__description {
@@ -701,6 +713,10 @@ p.info-user__count {
     height: 100%;
 }
 
+.review-youtube-main:hover .review-youtube-main__image {
+    transform: scale(1.1);
+}
+
 .review-youtube-main__overlay {
     position: absolute;
     top: 50%;
@@ -717,6 +733,11 @@ p.info-user__count {
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 16px;
+}
+
+.review-youtube-item:hover .review-youtube-item__image {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
 }
 
 .review-youtube-item:last-child {
@@ -745,7 +766,7 @@ p.aitool-category__description {
 .aitool-item {
     display: flex;
     align-items: center;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 -6px 33px -4px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     padding: 16px;
 }
@@ -771,6 +792,10 @@ span.aitool-item__count {
 .aitool-item:hover {
     cursor: pointer;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.aitool-item:hover .aitool-item__link {
+    text-decoration: underline;
 }
 
 p.aitool__description {
@@ -806,8 +831,13 @@ h4.footer-category-list__title {
 }
 
 a.footer-category-list__link {
-    color: white;
+    color: #d1d5db;
     font-size: 14px;
+}
+
+a.footer-category-list__link:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 ul.footer-category-list li {
@@ -838,4 +868,58 @@ ul.footer-social__list {
 img.review-youtube-main__image {
     height: 100%;
     object-fit: cover;
+    transition: all 0.1s ease;
+}
+
+button.tabs-feature__button.active::after {
+    background-color: #6bbcff;
+}
+
+button.tabs-feature__button.active svg {
+    fill: #6bbcff;
+    stroke: #6bbcff;
+}
+
+.list-card.active {
+    display: flex;
+}
+
+.list-card {
+    display: none;
+}
+
+.popup-filter {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền của popup */
+    z-index: 9999;
+}
+
+.popup-filter-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Màu nền của nội dung popup */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-popup-filter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+button.btn.btn-go-to-back {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
 }

@@ -12,7 +12,7 @@
     <body>
         <div class="wrapper-header position-relative">
             <div class="styles_bg"></div>
-            <div class="header-bg">
+            <div class="header-bg" id="header">
                 <div class="container gap-10">
                     <div class="row">
                         <div class="col-12">
@@ -54,8 +54,27 @@
                                         <li class="item-menu">
                                             <a href="#" class="link-menu">Resources</a>
                                             <ul class="sub-menu">
+                                                <li class="sub-menu-item d-block d-lg-none">
+                                                    <button class="btn btn-go-to-back">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="24"
+                                                            height="24"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="currentColor"
+                                                            stroke-width="2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="lucide lucide-arrow-left">
+                                                            <path d="m12 19-7-7 7-7"></path>
+                                                            <path d="M19 12H5"></path>
+                                                        </svg>
+                                                        Go Back
+                                                    </button>
+                                                </li>
                                                 <li class="sub-menu-item">
-                                                    <a href="#" class="sub-menu-link">Newsletter</a>
+                                                    <a href="https://fb.com" class="sub-menu-link">Newsletter</a>
                                                 </li>
                                                 <li class="sub-menu-item">
                                                     <a href="#" class="sub-menu-link">AI Conferences</a>
@@ -72,7 +91,7 @@
                                 </div>
                                 <div class="header-more-action">
                                     <a href="#" class="search">
-                                        <span class="search-icon"><img src="./assets/img/search.svg" alt="" /> </span>
+                                        <span class="search-icon"><img src="./assets/img/search.svg" alt="" /></span>
                                     </a>
                                     <div class="action">
                                         <button class="btn login">Login</button>
@@ -98,8 +117,9 @@
                     <div class="col-12">
                         <h1 class="text-title">Discover what AI can do for you</h1>
                         <span class="text-normal">
-                            We've helped <strong>5M+ professionals</strong> learn to leverage AI by helping them find
-                            the best AI tools.
+                            We've helped
+                            <strong>5M+ professionals</strong>
+                            learn to leverage AI by helping them find the best AI tools.
                         </span>
                         <div class="input-search">
                             <input type="text" placeholder="Enter a tool name or use case..." />
@@ -136,8 +156,21 @@
                                 <ul class="tabs-feature__list">
                                     <li class="tabs-feature__item">
                                         <a href="#" class="tabs-feature__link">
-                                            <button class="tabs-feature__button btn">
-                                                <img src="./assets/img/up.svg" alt="" class="tabs-feature__icon" />
+                                            <button class="tabs-feature__button btn active">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="#64748b"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="fill-slate-500 flex tabs-feature__icon">
+                                                    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                                    <polyline points="16 7 22 7 22 13"></polyline>
+                                                </svg>
                                                 Featured
                                             </button>
                                         </a>
@@ -145,7 +178,30 @@
                                     <li class="tabs-feature__item">
                                         <a href="#" class="tabs-feature__link">
                                             <button class="tabs-feature__button btn">
-                                                <img src="./assets/img/star.svg" alt="" class="tabs-feature__icon" />
+                                                <svg
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="#64748b"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    class="fill-slate-500 flex tabs-feature__icon">
+                                                    <path
+                                                        d="M21.4891 11.2229L17.261 14.9129L18.5275 20.4067C18.5945 20.6939 18.5754 20.9945 18.4725 21.2709C18.3697 21.5472 18.1876 21.7872 17.9491 21.9606C17.7106 22.1341 17.4262 22.2334 17.1316 22.2462C16.837 22.2589 16.5451 22.1845 16.2925 22.0323L11.501 19.1261L6.71971 22.0323C6.46712 22.1845 6.17526 22.2589 5.88062 22.2462C5.58598 22.2334 5.30164 22.1341 5.06314 21.9606C4.82464 21.7872 4.64257 21.5472 4.53969 21.2709C4.43681 20.9945 4.41769 20.6939 4.48471 20.4067L5.7494 14.9186L1.52033 11.2229C1.29665 11.03 1.13491 10.7754 1.05539 10.4909C0.975861 10.2064 0.982096 9.9048 1.07331 9.62385C1.16452 9.34291 1.33665 9.09515 1.56811 8.91164C1.79957 8.72813 2.08005 8.61705 2.3744 8.59231L7.94877 8.1095L10.1247 2.9195C10.2383 2.64717 10.43 2.41455 10.6756 2.25093C10.9211 2.08731 11.2096 2 11.5047 2C11.7998 2 12.0883 2.08731 12.3338 2.25093C12.5794 2.41455 12.7711 2.64717 12.8847 2.9195L15.0672 8.1095L20.6397 8.59231C20.9341 8.61705 21.2145 8.72813 21.446 8.91164C21.6775 9.09515 21.8496 9.34291 21.9408 9.62385C22.032 9.9048 22.0382 10.2064 21.9587 10.4909C21.8792 10.7754 21.7175 11.03 21.4938 11.2229H21.4891Z"
+                                                        class="fill-slate-500 flex"></path>
+                                                    <path
+                                                        d="M21.4891 11.2229L17.261 14.9129L18.5275 20.4067C18.5945 20.6939 18.5754 20.9945 18.4725 21.2709C18.3697 21.5472 18.1876 21.7872 17.9491 21.9606C17.7106 22.1341 17.4262 22.2334 17.1316 22.2462C16.837 22.2589 16.5451 22.1845 16.2925 22.0323L11.501 19.1261L6.71971 22.0323C6.46712 22.1845 6.17526 22.2589 5.88062 22.2462C5.58598 22.2334 5.30164 22.1341 5.06314 21.9606C4.82464 21.7872 4.64257 21.5472 4.53969 21.2709C4.43681 20.9945 4.41769 20.6939 4.48471 20.4067L5.7494 14.9186L1.52033 11.2229C1.29665 11.03 1.13491 10.7754 1.05539 10.4909C0.975861 10.2064 0.982096 9.9048 1.07331 9.62385C1.16452 9.34291 1.33665 9.09515 1.56811 8.91164C1.79957 8.72813 2.08005 8.61705 2.3744 8.59231L7.94877 8.1095L10.1247 2.9195C10.2383 2.64717 10.43 2.41455 10.6756 2.25093C10.9211 2.08731 11.2096 2 11.5047 2C11.7998 2 12.0883 2.08731 12.3338 2.25093C12.5794 2.41455 12.7711 2.64717 12.8847 2.9195L15.0672 8.1095L20.6397 8.59231C20.9341 8.61705 21.2145 8.72813 21.446 8.91164C21.6775 9.09515 21.8496 9.34291 21.9408 9.62385C22.032 9.9048 22.0382 10.2064 21.9587 10.4909C21.8792 10.7754 21.7175 11.03 21.4938 11.2229H21.4891Z"
+                                                        class="fill-slate-500 flex"
+                                                        fill-opacity="0.2"></path>
+                                                    <path
+                                                        d="M21.4891 11.2229L17.261 14.9129L18.5275 20.4067C18.5945 20.6939 18.5754 20.9945 18.4725 21.2709C18.3697 21.5472 18.1876 21.7872 17.9491 21.9606C17.7106 22.1341 17.4262 22.2334 17.1316 22.2462C16.837 22.2589 16.5451 22.1845 16.2925 22.0323L11.501 19.1261L6.71971 22.0323C6.46712 22.1845 6.17526 22.2589 5.88062 22.2462C5.58598 22.2334 5.30164 22.1341 5.06314 21.9606C4.82464 21.7872 4.64257 21.5472 4.53969 21.2709C4.43681 20.9945 4.41769 20.6939 4.48471 20.4067L5.7494 14.9186L1.52033 11.2229C1.29665 11.03 1.13491 10.7754 1.05539 10.4909C0.975861 10.2064 0.982096 9.9048 1.07331 9.62385C1.16452 9.34291 1.33665 9.09515 1.56811 8.91164C1.79957 8.72813 2.08005 8.61705 2.3744 8.59231L7.94877 8.1095L10.1247 2.9195C10.2383 2.64717 10.43 2.41455 10.6756 2.25093C10.9211 2.08731 11.2096 2 11.5047 2C11.7998 2 12.0883 2.08731 12.3338 2.25093C12.5794 2.41455 12.7711 2.64717 12.8847 2.9195L15.0672 8.1095L20.6397 8.59231C20.9341 8.61705 21.2145 8.72813 21.446 8.91164C21.6775 9.09515 21.8496 9.34291 21.9408 9.62385C22.032 9.9048 22.0382 10.2064 21.9587 10.4909C21.8792 10.7754 21.7175 11.03 21.4938 11.2229H21.4891Z"
+                                                        class="fill-slate-500 flex"
+                                                        fill-opacity="0.2"></path>
+                                                    <path
+                                                        d="M21.4891 11.2229L17.261 14.9129L18.5275 20.4067C18.5945 20.6939 18.5754 20.9945 18.4725 21.2709C18.3697 21.5472 18.1876 21.7872 17.9491 21.9606C17.7106 22.1341 17.4262 22.2334 17.1316 22.2462C16.837 22.2589 16.5451 22.1845 16.2925 22.0323L11.501 19.1261L6.71971 22.0323C6.46712 22.1845 6.17526 22.2589 5.88062 22.2462C5.58598 22.2334 5.30164 22.1341 5.06314 21.9606C4.82464 21.7872 4.64257 21.5472 4.53969 21.2709C4.43681 20.9945 4.41769 20.6939 4.48471 20.4067L5.7494 14.9186L1.52033 11.2229C1.29665 11.03 1.13491 10.7754 1.05539 10.4909C0.975861 10.2064 0.982096 9.9048 1.07331 9.62385C1.16452 9.34291 1.33665 9.09515 1.56811 8.91164C1.79957 8.72813 2.08005 8.61705 2.3744 8.59231L7.94877 8.1095L10.1247 2.9195C10.2383 2.64717 10.43 2.41455 10.6756 2.25093C10.9211 2.08731 11.2096 2 11.5047 2C11.7998 2 12.0883 2.08731 12.3338 2.25093C12.5794 2.41455 12.7711 2.64717 12.8847 2.9195L15.0672 8.1095L20.6397 8.59231C20.9341 8.61705 21.2145 8.72813 21.446 8.91164C21.6775 9.09515 21.8496 9.34291 21.9408 9.62385C22.032 9.9048 22.0382 10.2064 21.9587 10.4909C21.8792 10.7754 21.7175 11.03 21.4938 11.2229H21.4891Z"
+                                                        class="fill-slate-500 flex"
+                                                        fill-opacity="0.2"></path>
+                                                </svg>
+
                                                 Featured
                                             </button>
                                         </a>
@@ -153,7 +209,24 @@
                                     <li class="tabs-feature__item">
                                         <a href="#" class="tabs-feature__link">
                                             <button class="tabs-feature__button btn">
-                                                <img src="./assets/img/star.svg" alt="" class="tabs-feature__icon" />
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="#64748b"
+                                                    stroke="#64748b"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="fill-slate-500 flex tabs-feature__icon">
+                                                    <path
+                                                        d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                                                    <path d="M5 3v4"></path>
+                                                    <path d="M19 17v4"></path>
+                                                    <path d="M3 5h4"></path>
+                                                    <path d="M17 19h4"></path>
+                                                </svg>
                                                 Featured
                                             </button>
                                         </a>
@@ -197,7 +270,7 @@
             <!-- list item chính  -->
             <div class="mt-3">
                 <div class="container gap-10">
-                    <div class="row">
+                    <div class="row list-card active">
                         <div class="col-12 col-md-6 col-lg-3">
                             <div class="card-item d-flex flex-column mt-3">
                                 <!-- Block: card-item -->
@@ -207,13 +280,11 @@
                                         <img
                                             src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
                                             alt=""
-                                            class="avatar-wrapper__image"
-                                        />
+                                            class="avatar-wrapper__image" />
                                         <img
                                             src="./assets/img/verify.svg"
                                             alt=""
-                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute"
-                                        />
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
                                     </a>
                                     <!-- Element: card-item__avatar-details -->
                                     <div class="card-item__avatar-details">
@@ -240,7 +311,23 @@
                                     <!-- Element: card-item__info-count -->
                                     <div class="card-item__info-count">
                                         <span class="info-count">12</span>
-                                        <button><img src="./assets/img/mark.svg" alt="" /></button>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <!-- Block: card-item__description -->
@@ -256,7 +343,8 @@
                                 <div class="card-item__button">
                                     <a href="#" class="button-link">
                                         <button class="get-deal-button btn">
-                                            Get Deal <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -271,13 +359,11 @@
                                         <img
                                             src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
                                             alt=""
-                                            class="avatar-wrapper__image"
-                                        />
+                                            class="avatar-wrapper__image" />
                                         <img
                                             src="./assets/img/verify.svg"
                                             alt=""
-                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute"
-                                        />
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
                                     </a>
                                     <!-- Element: card-item__avatar-details -->
                                     <div class="card-item__avatar-details">
@@ -304,7 +390,23 @@
                                     <!-- Element: card-item__info-count -->
                                     <div class="card-item__info-count">
                                         <span class="info-count">12</span>
-                                        <button><img src="./assets/img/mark.svg" alt="" /></button>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <!-- Block: card-item__description -->
@@ -320,7 +422,8 @@
                                 <div class="card-item__button">
                                     <a href="#" class="button-link">
                                         <button class="get-deal-button btn">
-                                            Get Deal <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -335,13 +438,11 @@
                                         <img
                                             src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
                                             alt=""
-                                            class="avatar-wrapper__image"
-                                        />
+                                            class="avatar-wrapper__image" />
                                         <img
                                             src="./assets/img/verify.svg"
                                             alt=""
-                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute"
-                                        />
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
                                     </a>
                                     <!-- Element: card-item__avatar-details -->
                                     <div class="card-item__avatar-details">
@@ -368,7 +469,23 @@
                                     <!-- Element: card-item__info-count -->
                                     <div class="card-item__info-count">
                                         <span class="info-count">12</span>
-                                        <button><img src="./assets/img/mark.svg" alt="" /></button>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <!-- Block: card-item__description -->
@@ -384,7 +501,8 @@
                                 <div class="card-item__button">
                                     <a href="#" class="button-link">
                                         <button class="get-deal-button btn">
-                                            Get Deal <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -399,13 +517,11 @@
                                         <img
                                             src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
                                             alt=""
-                                            class="avatar-wrapper__image"
-                                        />
+                                            class="avatar-wrapper__image" />
                                         <img
                                             src="./assets/img/verify.svg"
                                             alt=""
-                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute"
-                                        />
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
                                     </a>
                                     <!-- Element: card-item__avatar-details -->
                                     <div class="card-item__avatar-details">
@@ -432,7 +548,23 @@
                                     <!-- Element: card-item__info-count -->
                                     <div class="card-item__info-count">
                                         <span class="info-count">12</span>
-                                        <button><img src="./assets/img/mark.svg" alt="" /></button>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
                                     </div>
                                 </div>
                                 <!-- Block: card-item__description -->
@@ -448,7 +580,658 @@
                                 <div class="card-item__button">
                                     <a href="#" class="button-link">
                                         <button class="get-deal-button btn">
-                                            Get Deal <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn-see-more">
+                                <a href="#">
+                                    <button class="btn">See More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row list-card">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">ChatGPT</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">ChatGPT</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">ChatGPT</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">ChatGPT</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn-see-more">
+                                <a href="#">
+                                    <button class="btn">See More</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row list-card">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">Cycle</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">Cycle</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">Cycle</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="card-item d-flex flex-column mt-3">
+                                <!-- Block: card-item -->
+                                <div class="card-item__avatar">
+                                    <!-- Element: card-item__avatar -->
+                                    <a href="#" class="avatar-wrapper avatar-wrapper--position-relative">
+                                        <img
+                                            src="./assets/img/3dbc43c4fddebe364f6f3191bdd63a4accaba33a-207x207.webp"
+                                            alt=""
+                                            class="avatar-wrapper__image" />
+                                        <img
+                                            src="./assets/img/verify.svg"
+                                            alt=""
+                                            class="avatar-wrapper__verification-badge avatar-wrapper--position-absolute" />
+                                    </a>
+                                    <!-- Element: card-item__avatar-details -->
+                                    <div class="card-item__avatar-details">
+                                        <a href="#"><h2 class="avatar-name">Cycle</h2></a>
+                                        <!-- Element: card-item__rating -->
+                                        <div class="card-item__rating">
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <img src="./assets/img/star-3.svg" alt="" />
+                                            <span class="rating-count">(1)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__info -->
+                                <div class="card-item__info">
+                                    <!-- Element: card-item__info-details -->
+                                    <div class="card-item__info-details">
+                                        <img src="./assets/img/tag.svg" alt="" />
+                                        <span class="info-label">Active Deal</span>
+                                        <img src="./assets/img/info.svg" alt="" />
+                                    </div>
+                                    <!-- Element: card-item__info-count -->
+                                    <div class="card-item__info-count">
+                                        <span class="info-count">12</span>
+                                        <button>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="silver"
+                                                stroke="silver"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="card-item__info-count-svg"
+                                                role="presentation">
+                                                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path>
+                                                <title>Bookmark</title>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Block: card-item__description -->
+                                <p class="card-item__description">
+                                    Revolutionizing Business Intelligence with Instant Market Research Reports
+                                </p>
+                                <!-- Block: card-item__tags -->
+                                <div class="card-item__tags">
+                                    <a href="#"><span class="tag">#research</span></a>
+                                    <a href="#"><span class="tag">#research</span></a>
+                                </div>
+                                <!-- Block: card-item__button -->
+                                <div class="card-item__button">
+                                    <a href="#" class="button-link">
+                                        <button class="get-deal-button btn">
+                                            Get Deal
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -479,8 +1262,7 @@
                                             height="40"
                                             src="./assets/img/youtube.svg"
                                             alt=""
-                                            class="on-youtube__logo"
-                                        />
+                                            class="on-youtube__logo" />
                                     </h2>
                                     <p class="on-youtube__description">
                                         Learn to leverage AI tools and acquire AI skills to future-proof your life and
@@ -523,8 +1305,7 @@
                             </div>
                             <div class="col-12 col-lg-3">
                                 <div
-                                    class="d-flex justify-content-start justify-content-lg-end h-100 align-items-center"
-                                >
+                                    class="d-flex justify-content-start justify-content-lg-end h-100 align-items-center">
                                     <button class="on-youtube__btn btn">Futurepedia's YouTube</button>
                                 </div>
                             </div>
@@ -537,14 +1318,12 @@
                                         src="./assets/img/maxresdefault.webp"
                                         alt=""
                                         width="100%"
-                                        class="review-youtube-main__image"
-                                    />
+                                        class="review-youtube-main__image" />
                                     <div class="review-youtube-main__overlay">
                                         <img
                                             src="./assets/img/play.svg"
                                             alt=""
-                                            class="review-youtube-main__play-icon"
-                                        />
+                                            class="review-youtube-main__play-icon" />
                                     </div>
                                 </div>
                             </div>
@@ -554,24 +1333,21 @@
                                         src="./assets/img/maxresdefault1.webp"
                                         alt=""
                                         width="100%"
-                                        class="review-youtube-item__image"
-                                    />
+                                        class="review-youtube-item__image" />
                                 </div>
                                 <div class="review-youtube-item">
                                     <img
                                         src="./assets/img/maxresdefault1.webp"
                                         alt=""
                                         width="100%"
-                                        class="review-youtube-item__image"
-                                    />
+                                        class="review-youtube-item__image" />
                                 </div>
                                 <div class="review-youtube-item">
                                     <img
                                         src="./assets/img/maxresdefault1.webp"
                                         alt=""
                                         width="100%"
-                                        class="review-youtube-item__image"
-                                    />
+                                        class="review-youtube-item__image" />
                                 </div>
                             </div>
                         </div>
@@ -722,7 +1498,7 @@
                 <div class="row py-4">
                     <div class="col-12 col-lg-8">
                         <div class="footer-bottom">
-                            <span class="footer-bottom__copyright">© 2024 Futurepedia LLC. All rights reserved. </span>
+                            <span class="footer-bottom__copyright">© 2024 Futurepedia LLC. All rights reserved.</span>
                             <a href="#" class="footer-bottom__link"><span>Privacy Policy</span></a>
                             <a href="#" class="footer-bottom__link"><span>Terms of Service</span></a>
                         </div>
@@ -731,17 +1507,53 @@
                         <div class="footer-social">
                             <ul class="footer-social__list justify-content-start justify-content-lg-end">
                                 <li>
-                                    <a href="#"
-                                        ><img src="./assets/img/linked.svg" alt="" class="footer-social__icon"
-                                    /></a>
+                                    <a href="#">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="#9CA3AF"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            class="h-6 w-6"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                            <rect width="4" height="12" x="2" y="9"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="./assets/img/x.svg" alt="" class="footer-social__icon" /></a>
+                                    <a href="#">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="#9CA3AF"
+                                            viewBox="0 0 24 24"
+                                            class="h-6 w-6"
+                                            width="24"
+                                            height="24"
+                                            aria-hidden="true">
+                                            <path
+                                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                                        </svg>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        ><img src="./assets/img/iconytb.svg" alt="" class="footer-social__icon"
-                                    /></a>
+                                    <a href="#">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="#9CA3AF"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            class="h-6 w-6"
+                                            aria-hidden="true">
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -749,7 +1561,13 @@
                 </div>
             </div>
         </footer>
-
+        <div class="popup-filter" id="popup-filter">
+            <div class="popup-filter-content">
+                <!-- Nội dung của popup ở đây -->
+                <p>This is a popup!</p>
+                <button class="close-popup-filter">Close</button>
+            </div>
+        </div>
         <script src="./assets/css/fontawesome-free-6.4.0-web/js/all.min.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
