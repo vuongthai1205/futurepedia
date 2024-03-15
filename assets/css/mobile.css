@@ -88,4 +88,22 @@
         background-color: white;
         z-index: 1;
     }
+    .popup-filter-content{
+        min-width: unset;
+        width: 100%;
+    }
+
+    button.btn.popup-filter-actions__clear-btn {
+        width: 100%;
+    }
+
+    button.btn.popup-filter-actions__apply-btn {
+        width: 100%;
+    }
+
+    .popup-filter-actions{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }

@@ -1314,11 +1314,13 @@
                         <div class="row mt-2 mt-lg-0">
                             <div class="col-12 col-lg-9 mb-3 m-lg-0">
                                 <div class="review-youtube-main">
-                                    <img
-                                        src="./assets/img/maxresdefault.webp"
-                                        alt=""
-                                        width="100%"
-                                        class="review-youtube-main__image" />
+                                    <a href="#">
+                                        <img
+                                            src="./assets/img/maxresdefault.webp"
+                                            alt=""
+                                            width="100%"
+                                            class="review-youtube-main__image" />
+                                    </a>
                                     <div class="review-youtube-main__overlay">
                                         <img
                                             src="./assets/img/play.svg"
@@ -1329,25 +1331,31 @@
                             </div>
                             <div class="col-12 col-lg-3">
                                 <div class="review-youtube-item">
-                                    <img
-                                        src="./assets/img/maxresdefault1.webp"
-                                        alt=""
-                                        width="100%"
-                                        class="review-youtube-item__image" />
+                                    <a href="#">
+                                        <img
+                                            src="./assets/img/maxresdefault1.webp"
+                                            alt=""
+                                            width="100%"
+                                            class="review-youtube-item__image" />
+                                    </a>
                                 </div>
                                 <div class="review-youtube-item">
-                                    <img
-                                        src="./assets/img/maxresdefault1.webp"
-                                        alt=""
-                                        width="100%"
-                                        class="review-youtube-item__image" />
+                                    <a href="#">
+                                        <img
+                                            src="./assets/img/maxresdefault1.webp"
+                                            alt=""
+                                            width="100%"
+                                            class="review-youtube-item__image" />
+                                    </a>
                                 </div>
                                 <div class="review-youtube-item">
-                                    <img
-                                        src="./assets/img/maxresdefault1.webp"
-                                        alt=""
-                                        width="100%"
-                                        class="review-youtube-item__image" />
+                                    <a href="#">
+                                        <img
+                                            src="./assets/img/maxresdefault1.webp"
+                                            alt=""
+                                            width="100%"
+                                            class="review-youtube-item__image" />
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -1562,10 +1570,62 @@
             </div>
         </footer>
         <div class="popup-filter" id="popup-filter">
-            <div class="popup-filter-content">
-                <!-- Nội dung của popup ở đây -->
-                <p>This is a popup!</p>
-                <button class="close-popup-filter">Close</button>
+            <div class="popup-filter-content d-flex flex-column">
+                <div class="popup-filter-section mb-4">
+                    <h2 class="popup-filter-section__title">Apply Filters</h2>
+                    <p class="popup-filter-section__description">
+                        Select the filters you want to apply to your search.
+                    </p>
+                </div>
+                <div class="popup-filter-section line mb-3 pb-3">
+                    <h3 class="popup-filter-section__title">Filters</h3>
+                    <ul class="popup-filter-list">
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <!-- Add more filter items here if needed -->
+                    </ul>
+                </div>
+                <div class="popup-filter-section mb-3">
+                    <h3 class="popup-filter-section__title">Filters</h3>
+                    <ul class="popup-filter-list">
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <li class="popup-filter-item">
+                            <input type="checkbox" name="features" class="popup-filter-item__checkbox" />
+                            <label for="waitlist-checkbox" class="popup-filter-item__label">Waitlist</label>
+                        </li>
+                        <!-- Add more filter items here if needed -->
+                    </ul>
+                </div>
+                <div class="popup-filter-actions">
+                    <button class="btn popup-filter-actions__apply-btn">Apply Filters</button>
+                    <button class="btn popup-filter-actions__clear-btn">Clear Filters</button>
+                </div>
+                <button class="close-popup-filter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
             </div>
         </div>
         <script src="./assets/css/fontawesome-free-6.4.0-web/js/all.min.js"></script>
