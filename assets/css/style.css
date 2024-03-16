@@ -289,12 +289,21 @@ h1.text-title {
     margin-bottom: 8px;
 }
 
+h1.text-title.text-left{
+    font-size: 36px;
+}
+
 span.text-normal {
     display: block;
     text-align: center;
     margin-bottom: 32px;
     color: #475569;
     font-size: 20px;
+}
+
+.text-normal.text-left{
+    line-height: 24px;
+    color: #0f172a;
 }
 .input-search input {
     outline: none;
@@ -388,6 +397,8 @@ a.link-tag:hover {
     border-radius: 12px;
     overflow: hidden;
     padding: 16px 24px;
+    box-shadow: 0 0 #0000, 0 0 #0000,0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    border: 1px solid rgb(229, 231, 235);
 }
 
 img.avatar-wrapper__image {
@@ -1053,4 +1064,45 @@ span.category-item__count {
 
 .pb-128{
     padding-bottom: 128px;
+}
+
+.pb-48{
+    padding-bottom: 48px;
+}
+
+.wrapper-productivity{
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px 16px;
+    box-shadow: 0 0 #0000,0 0 #0000,  0 8px 10px rgb(0, 0, 0, 0.15);
+}
+
+.productivity-title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: rgb(73, 173, 255);
+}
+.productivity-title:hover{
+    text-decoration: underline;
+}
+
+.productivity-des{
+    color: rgb(3, 7, 18);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.wrapper-content-website{
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.content-website__title{
+    font-size: 36px;
+    font-weight: 600;
+}
+.content-website__list{
+    list-style-type: disc;
+    padding-left: 32px;
 }
