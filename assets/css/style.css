@@ -1106,3 +1106,39 @@ span.category-item__count {
     list-style-type: disc;
     padding-left: 32px;
 }
+
+h4.in-document__title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+a.in-document__link {
+    font-size: 20px;
+    text-decoration: underline;
+}
+.content-website p,.content-website ul{
+    font-size: 20px;
+}
+
+.pagination{
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-website-builder a.page-link {
+    padding: 8px;
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #74749C;
+    border: 1px solid rgb(209, 213, 219);
+}
+
+.pagination-website-builder .page-item.active .page-link {
+    color: rgb(128,67,18);
+    background: #E7F1FA;
+    border-color: rgb(209,213,219);
+}
