@@ -111,3 +111,10 @@
         line-height: 40px;
     }
 }
+
+@media (max-width: 767.98px) { 
+    .category-item__image img{
+        width: 100%;
+        height: 100%;
+    }
+ }

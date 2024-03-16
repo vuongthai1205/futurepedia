@@ -991,11 +991,11 @@ label.popup-filter-item__label {
     line-height: 24px;
 }
 
-.popup-filter-section.line{
+.popup-filter-section.line {
     position: relative;
 }
 
-.popup-filter-section.line::after{
+.popup-filter-section.line::after {
     position: absolute;
     content: '';
     width: 100%;
@@ -1003,4 +1003,54 @@ label.popup-filter-item__label {
     left: 0;
     height: 1px;
     background-color: #e5e7eb;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.category-item {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 #000, 0 0 #0006, 0 20px 25px -5px rgb(0 0 0 / 17%), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    gap: 8px;
+}
+
+h2.category-item__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.category-item__content {
+    display: flex;
+    flex-direction: column;
+}
+
+a.category-item__show-all-link {
+    margin-top: auto;
+    font-weight: 700;
+    color: #49adff;
+}
+
+a.category-item__show-all-link:hover {
+    text-decoration: underline;
+}
+
+a.category-item__link:hover {
+    text-decoration: underline;
+    color: #64748b;
+}
+
+span.category-item__count {
+    color: #64748b;
+}
+
+.wrapper-categories {
+    position: relative;
+    top: -129px;
+}
+
+.pb-128{
+    padding-bottom: 128px;
 }
