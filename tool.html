@@ -145,7 +145,26 @@
                                         <div class="tool-detail-verified">
                                             <img src="./assets/img/verify.svg" alt="" />
                                             Verified
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info " type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r3:" data-state="closed"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-info"
+                                                type="button"
+                                                aria-haspopup="dialog"
+                                                aria-expanded="false"
+                                                aria-controls="radix-:r3:"
+                                                data-state="closed">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M12 16v-4"></path>
+                                                <path d="M12 8h.01"></path>
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -401,7 +420,8 @@
                     <div class="col-12">
                         <div class="detail-promote-content">
                             <p class="detail-promote-title text-center text-lg-left">Promote B12</p>
-                            <div class="detail-promote-actions flex-column justify-content-center flex-lg-row justify-content-lg-start">
+                            <div
+                                class="detail-promote-actions flex-column justify-content-center flex-lg-row justify-content-lg-start">
                                 <img src="./assets/img/image-widget.svg" alt="" class="detail-promote-icon" />
                                 <span class="detail-promote-action">
                                     Copy Embed Code
@@ -675,7 +695,7 @@
             </div>
         </div>
 
-        <div class=" py-5">
+        <div class="py-5">
             <div class="container gap-10">
                 <div class="row">
                     <div class="col-12">
@@ -897,6 +917,51 @@
                 </div>
             </div>
         </footer>
+        <div class="popup-review" id="popup-review">
+            <div class="popup-review-content d-flex flex-column">
+                <div class="d-flex flex-column">
+                    <div>
+                        <h2 class="review-title">Write your review</h2>
+                        <p class="review-description">
+                            Your review helps others learn about great AI tools. Please be noted that your review will
+                            be moderated before it is published.
+                        </p>
+                        <div class="star-rating">
+                            <svg class="inline-block" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg class="inline-block" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg class="inline-block" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg class="inline-block" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg class="inline-block" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea placeholder="Write your review here..." class="review-textarea"></textarea>
+                    </div>
+                    <div class="review-guidelines">Review should be more than 35 characters.</div>
+                    <div>
+                        <button type="submit" class="btn post-review-button">Post review</button>
+                    </div>
+                </div>
+        
+                <button class="close-popup-review" aria-label="Close popup review">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="close-icon">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
         <div class="popup-filter" id="popup-filter">
             <div class="popup-filter-content d-flex flex-column">
                 <div class="popup-filter-section mb-4">
@@ -965,6 +1030,71 @@
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         class="h-4 w-4">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="popup-signup" id="popup-signup">
+            <div class="popup-signup-content d-flex flex-column">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="img-logo">
+                            <a href="/" class="logo-link">
+                                <img src="./assets/img/futurepedia-dark.svg" alt="" class="logo-image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-none d-lg-block">
+                        <div class="policy-signup">
+                            <ul>
+                                <li class="policy-item">
+                                    <h4 class="policy-title">Get personalized recommendations</h4>
+                                    <p class="policy-description">
+                                        Based on your profile and preferences we’ll recommend tools that can help you work smarter.
+                                    </p>
+                                </li>
+                                <li class="policy-item">
+                                    <h4 class="policy-title">Get personalized recommendations</h4>
+                                    <p class="policy-description">
+                                        Create a shortlist of interesting AI tools, plugins and content.
+                                    </p>
+                                </li>
+                                <li class="policy-item">
+                                    <h4 class="policy-title">Get personalized recommendations</h4>
+                                    <p class="policy-description">
+                                        Share your experiences and help other’s try tools that will work for them.
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="signup-info">
+                            <p class="info-text">Join 200,000+ professionals using Futurepedia to adopt AI tools and skills.</p>
+                            <button class="btn btn-google">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 488 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" class="google-icon">
+                                    <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+                                </svg>
+                                Sign up with google
+                            </button>
+                            <p class="info-text-1 mt-3">
+                                Already have an account?
+                                <a href="#" class="signin-link">Sign in</a>
+                            </p>
+                            <p class="info-text-1">
+                                By signing in, you agree to our
+                                <a href="#" class="terms-link">Terms of Use</a>
+                                and
+                                <a href="#" class="privacy-link">Privacy Policy.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="close-popup-signup" aria-label="Close popup">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon">
                         <path d="M18 6 6 18"></path>
                         <path d="m6 6 12 12"></path>
                     </svg>

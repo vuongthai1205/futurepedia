@@ -88,7 +88,7 @@
         background-color: white;
         z-index: 1;
     }
-    .popup-filter-content{
+    .popup-filter-content, .popup-signup-content, .popup-review-content{
         min-width: unset;
         width: 100%;
     }
@@ -129,6 +129,9 @@
     }
     .btn.detail-review-btn{
         width: 100%;
+    }
+    #popup-signup p.info-text{
+        width: 90%;
     }
 }
 

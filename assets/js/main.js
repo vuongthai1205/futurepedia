@@ -78,6 +78,40 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const button = document.querySelector('.btn.detail-review-btn');
+    const popup = document.getElementById('popup-review');
+    const closeButton = document.querySelector('.close-popup-review');
+
+    button.addEventListener('click', function (e) 
+    {
+        e.preventDefault()
+        popup.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        popup.style.display = 'none';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const button = document.querySelectorAll('.btn.signup');
+    const popup = document.getElementById('popup-signup');
+    const closeButton = document.querySelector('.close-popup-signup');
+    button.forEach(e => {
+        e.addEventListener('click', function () {
+            popup.style.display = 'block';
+        });
+    })
+    
+
+    closeButton.addEventListener('click', function () {
+        popup.style.display = 'none';
+    });
+});
+
 var closeSubmenu = document.querySelectorAll('.btn-go-to-back');
 var subMenu = document.querySelectorAll('.sub-menu');
 var itemMenu = document.querySelectorAll('.item-menu');

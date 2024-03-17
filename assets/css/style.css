@@ -899,7 +899,7 @@ button.tabs-feature__button.active svg {
     display: none;
 }
 
-.popup-filter {
+.popup-filter , .popup-signup,.popup-review {
     display: none;
     position: fixed;
     top: 0;
@@ -910,7 +910,7 @@ button.tabs-feature__button.active svg {
     z-index: 9999;
 }
 
-.popup-filter-content {
+.popup-filter-content,.popup-signup-content ,.popup-review-content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -921,7 +921,11 @@ button.tabs-feature__button.active svg {
     min-width: 425px;
 }
 
-.close-popup-filter {
+.popup-signup-content, .popup-review-content{
+    min-width: 896px;
+}
+
+.close-popup-filter ,.close-popup-signup ,.close-popup-review {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1593,4 +1597,101 @@ a.detail-review-read-more-link:hover ,.tool-related-link:hover{
 .detail-content h3{
     font-size: 24px;
     font-weight: 700;
+}
+
+
+#popup-signup h4.policy-title {
+    font-size: 18px;
+    color: rgb(63, 131, 248);
+}
+
+#popup-signup p.policy-description {
+    font-size: 14px;
+    color: rgb(107, 114, 128);
+}
+
+#popup-signup p.info-text {
+    font-size: 18px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#popup-signup .signup-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#popup-signup button.btn.btn-google {
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+    background: #c81e1e;
+    padding: 8px 16px;
+}
+
+#popup-signup .info-text-1{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(107, 114, 128);
+}
+
+#popup-signup .info-text-1 a {
+    color: rgb(63, 131, 248);
+}
+
+#popup-signup .info-text-1 a:hover{
+    text-decoration: underline;
+}
+
+h2.review-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p.review-description {
+    font-size: 14px;
+    color: rgb(107, 114, 128);
+    margin: 0;
+}
+
+.star-rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 16px;
+}
+
+textarea.review-textarea {
+    width: 100%;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    height: 120px;
+}
+
+.review-guidelines {
+    font-size: 14px;
+    margin: 13px 0;
+}
+
+.star-rating{
+    color: #ccc;
+
+}
+
+.star-rating svg{
+    cursor: pointer;
+}
+
+button.btn.post-review-button {
+    background: #058fff;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 100%;
 }
