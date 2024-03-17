@@ -73,8 +73,14 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.style.display = 'block';
     });
 
-    closeButton.addEventListener('click', function () {
+    closeButton.addEventListener('click', function (e) {
+        e.preventDefault()
         popup.style.display = 'none';
+    });
+    window.addEventListener('click', function (event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
     });
 });
 
@@ -94,23 +100,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
         popup.style.display = 'none';
     });
+    window.addEventListener('click', function (event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelectorAll('.btn.signup');
     const popup = document.getElementById('popup-signup');
     const closeButton = document.querySelector('.close-popup-signup');
+
+    // Mở popup khi click vào nút
     button.forEach(e => {
         e.addEventListener('click', function () {
             popup.style.display = 'block';
         });
-    })
-    
+    });
 
-    closeButton.addEventListener('click', function () {
+    // Đóng popup khi click vào nút đóng
+    closeButton.addEventListener('click', function (e) {
+        e.preventDefault()
         popup.style.display = 'none';
     });
+
+    // Đóng popup khi click ra ngoài nội dung của nó
+    window.addEventListener('click', function (event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
 });
+
 
 var closeSubmenu = document.querySelectorAll('.btn-go-to-back');
 var subMenu = document.querySelectorAll('.sub-menu');

@@ -551,9 +551,6 @@ span.info-count {
     display: flex;
     align-items: center;
 }
-div.card-item__info-count:hover .info-count {
-    text-decoration: underline;
-}
 div.card-item__info-count:hover button > svg.card-item__info-count-svg > path {
     fill: #49adff;
     stroke: #49adff;
@@ -1236,6 +1233,7 @@ a.tool-category-link.tool-detail-more-link svg {
 .tool-category {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tool-detail-actions {
