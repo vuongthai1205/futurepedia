@@ -1663,6 +1663,7 @@ p.review-description {
     display: flex;
     gap: 5px;
     margin-bottom: 16px;
+    margin-top: 8px;
 }
 
 textarea.review-textarea {
@@ -1694,4 +1695,9 @@ button.btn.post-review-button {
     font-size: 14px;
     padding: 8px 16px;
     width: 100%;
+}
+
+.detail-sidebar{
+    position: sticky;
+    top: 80px;
 }
