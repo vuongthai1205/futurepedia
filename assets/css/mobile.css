@@ -115,6 +115,21 @@
         font-size: 30px;
         font-weight: 600;
     }
+    .detail-promote-actions{
+        gap: 20px;
+    }
+    p.detail-promote-title{
+        font-size: 24px;
+    }
+    h2.tool-detail-title{
+        font-size: 24px;
+    }
+    .detail-promote{
+        background-image: unset;
+    }
+    .btn.detail-review-btn{
+        width: 100%;
+    }
 }
 
 @media (max-width: 767.98px) { 
