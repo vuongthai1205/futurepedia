@@ -154,6 +154,15 @@
     }
     #popup-signup p.info-text {
         width: 90%;
+    }.popup-video-content{
+        width: 100%;
+        min-width: unset;
+       align-items: center;
+    }
+    #video-frame{
+        width: 100%;
+        min-width: unset;
+        margin: 0;
     }
 }
 
