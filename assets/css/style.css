@@ -896,7 +896,7 @@ button.tabs-feature__button.active svg {
     display: none;
 }
 
-.popup-filter , .popup-signup,.popup-review {
+.popup-filter , .popup-signup,.popup-review, .popup-video {
     display: none;
     position: fixed;
     top: 0;
@@ -907,7 +907,7 @@ button.tabs-feature__button.active svg {
     z-index: 9999;
 }
 
-.popup-filter-content,.popup-signup-content ,.popup-review-content{
+.popup-filter-content,.popup-signup-content ,.popup-review-content,.popup-video-content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -922,7 +922,7 @@ button.tabs-feature__button.active svg {
     min-width: 896px;
 }
 
-.close-popup-filter ,.close-popup-signup ,.close-popup-review {
+.close-popup-filter ,.close-popup-signup ,.close-popup-review,.close-popup-video {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1698,4 +1698,14 @@ button.btn.post-review-button {
 .detail-sidebar{
     position: sticky;
     top: 80px;
+}
+
+.review-youtube__link{
+    height: 100%;
+}
+
+#video-frame{
+    width: 640px;
+    height: 360px;
+    margin: 20px;
 }

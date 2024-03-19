@@ -134,6 +134,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementById('popup-video');
+    const closeButton = document.querySelector('.close-popup-video');
+    const frame = document.getElementById('video-frame');
+    // Đóng popup khi click vào nút đóng
+    closeButton.addEventListener('click', function (e) {
+        e.preventDefault()
+        popup.style.display = 'none';
+        frame.src = '';
+    });
+
+    // Đóng popup khi click ra ngoài nội dung của nó
+    window.addEventListener('click', function (event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+            frame.src = '';
+        }
+    });
+});
+
+function openPopup(videoId) {
+    const popup = document.getElementById('popup-video');
+    const frame = document.getElementById('video-frame');
+    const newSrc = 'https://www.youtube.com/embed/' + videoId;
+    frame.src = newSrc;
+    popup.style.display = 'block';
+}
+
+
+
+
 var closeSubmenu = document.querySelectorAll('.btn-go-to-back');
 var subMenu = document.querySelectorAll('.sub-menu');
 var itemMenu = document.querySelectorAll('.item-menu');

@@ -53,7 +53,19 @@
                                         </li>
                                         <li class="item-menu">
                                             <a href="#" class="link-menu">Resources</a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right d-lg-none d-block"><path d="m9 18 6-6-6-6"></path></svg>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-chevron-right d-lg-none d-block">
+                                                <path d="m9 18 6-6-6-6"></path>
+                                            </svg>
                                             <ul class="sub-menu">
                                                 <li class="sub-menu-item d-block d-lg-none">
                                                     <button class="btn btn-go-to-back">
@@ -1315,13 +1327,13 @@
                         <div class="row mt-2 mt-lg-0">
                             <div class="col-12 col-lg-9 mb-3 m-lg-0">
                                 <div class="review-youtube-main">
-                                    <a href="#">
+                                    <div class="review-youtube__link" onclick="openPopup('gpP_YEv_9jA')">
                                         <img
                                             src="./assets/img/maxresdefault.webp"
                                             alt=""
                                             width="100%"
                                             class="review-youtube-main__image" />
-                                    </a>
+                                    </div>
                                     <div class="review-youtube-main__overlay">
                                         <img
                                             src="./assets/img/play.svg"
@@ -1332,31 +1344,31 @@
                             </div>
                             <div class="col-12 col-lg-3">
                                 <div class="review-youtube-item">
-                                    <a href="#">
+                                    <div class="review-youtube__link" onclick="openPopup('SbgJDL4DJ7M')">
                                         <img
                                             src="./assets/img/maxresdefault1.webp"
                                             alt=""
                                             width="100%"
                                             class="review-youtube-item__image" />
-                                    </a>
+                                    </div>
                                 </div>
                                 <div class="review-youtube-item">
-                                    <a href="#">
+                                    <div class="review-youtube__link" onclick="openPopup('ZYUt4WE4Mrw')">
                                         <img
                                             src="./assets/img/maxresdefault1.webp"
                                             alt=""
                                             width="100%"
                                             class="review-youtube-item__image" />
-                                    </a>
+                                    </div>
                                 </div>
                                 <div class="review-youtube-item">
-                                    <a href="#">
+                                    <div class="review-youtube__link" onclick="openPopup('j1clD8XDYyw')">
                                         <img
                                             src="./assets/img/maxresdefault1.webp"
                                             alt=""
                                             width="100%"
                                             class="review-youtube-item__image" />
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1576,7 +1588,7 @@
                     <div class="col-12 mb-3">
                         <div class="img-logo">
                             <a href="/" class="logo-link">
-                                <img src="./assets/img/futurepedia-dark.svg" alt="" class="logo-image">
+                                <img src="./assets/img/futurepedia-dark.svg" alt="" class="logo-image" />
                             </a>
                         </div>
                     </div>
@@ -1586,7 +1598,8 @@
                                 <li class="policy-item">
                                     <h4 class="policy-title">Get personalized recommendations</h4>
                                     <p class="policy-description">
-                                        Based on your profile and preferences we’ll recommend tools that can help you work smarter.
+                                        Based on your profile and preferences we’ll recommend tools that can help you
+                                        work smarter.
                                     </p>
                                 </li>
                                 <li class="policy-item">
@@ -1601,16 +1614,26 @@
                                         Share your experiences and help other’s try tools that will work for them.
                                     </p>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="signup-info">
-                            <p class="info-text">Join 200,000+ professionals using Futurepedia to adopt AI tools and skills.</p>
+                            <p class="info-text">
+                                Join 200,000+ professionals using Futurepedia to adopt AI tools and skills.
+                            </p>
                             <button class="btn btn-google">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 488 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" class="google-icon">
-                                    <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+                                <svg
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 488 512"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="google-icon">
+                                    <path
+                                        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
                                 </svg>
                                 Sign up with google
                             </button>
@@ -1628,14 +1651,24 @@
                     </div>
                 </div>
                 <button class="close-popup-signup" aria-label="Close popup">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="close-icon">
                         <path d="M18 6 6 18"></path>
                         <path d="m6 6 12 12"></path>
                     </svg>
                 </button>
             </div>
         </div>
-        
+
         <div class="popup-filter" id="popup-filter">
             <div class="popup-filter-content d-flex flex-column">
                 <div class="popup-filter-section mb-4">
@@ -1693,6 +1726,27 @@
                     <button class="btn popup-filter-actions__clear-btn">Clear Filters</button>
                 </div>
                 <button class="close-popup-filter">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-4 w-4">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="popup-video" id="popup-video">
+            <div class="popup-video-content d-flex flex-column">
+                <iframe  id="video-frame"></iframe>
+                <button class="close-popup-video">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
