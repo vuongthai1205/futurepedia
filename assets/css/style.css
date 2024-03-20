@@ -223,9 +223,6 @@ a.sub-menu-link:hover {
     color: var(--bluish-gray);
 }
 
-.action {
-    margin-left: 16px;
-}
 
 span.search-icon:hover {
     color: #42adff;
@@ -252,7 +249,7 @@ button.btn.signup {
 }
 
 .action {
-    margin-left: 16px;
+    gap: 16px;
 }
 
 span.search-icon:hover {
@@ -271,13 +268,6 @@ button.btn.login {
     background: transparent;
 }
 
-button.btn.signup {
-    border-radius: 9999px;
-    padding: 8px 16px;
-    color: white;
-    background: #49adff;
-    font-size: 14px;
-}
 
 h1.text-title {
     color: #1e293b;
@@ -1708,4 +1698,46 @@ button.btn.post-review-button {
     min-width: 640px;
     height: 300px;
     margin: 20px;
+}
+
+.account-nofi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rebeccapurple;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: white;
+    transform: translate(40%, -40%);
+}
+
+.account-signin span {
+    height: 90%;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgb(229, 231, 235);
+    border-left: none;
+    padding-right: 14px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+button.btn.logout {
+    padding: 8px 25px;
+    background: transparent;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 20px;
+    color:  rgb(3, 7, 18);
+}
+
+.header-account {
+    margin: 32px 0;
+    padding: 0 32px;
 }
