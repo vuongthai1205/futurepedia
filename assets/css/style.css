@@ -1741,3 +1741,29 @@ button.btn.logout {
     margin: 32px 0;
     padding: 0 32px;
 }
+
+footer .header-account{
+    margin: 0;
+    padding: 0;
+}
+
+footer .account-signin, footer .header-account button.btn.logout {
+    color: #0a0e23;
+}
+
+footer .account-signin{
+    background-color: #fff;
+    border-radius: 9999px;
+}
+
+footer .header-account button.btn.logout{
+    font-size: 14px;
+    background-color: #fff;
+    padding: 8px 16px;
+}
+
+footer .account-signin span{
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
